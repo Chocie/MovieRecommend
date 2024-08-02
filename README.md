@@ -1,14 +1,14 @@
 # MovieRecommend
 
 This methodology outlines the comprehensive process from data preparation to model training and evaluation, culminating in a functional recommendation system tailored to user emotions.
-To handle the large-scale data processing required for this project, we utilized PySpark. We began by importing the necessary libraries, including PySpark and pandas, and initialized a Spark session.
+To handle the large-scale data processing required for this project, we utilized PySpark. We began by importing the necessary libraries, including **PySpark** and **pandas**, and initialized a Spark session.
 
 We used two primary datasets: ratings.csv and movies.csv. One containing movie ratings and another containing movie genres. These datasets were read into Spark DataFrames and then merged to associate ratings with their respective movie genres.
 
 Before training the model, we applied data cleaning steps to ensure the datasets were appropriately formatted. This included dropping any rows with missing values. The data was split to training data(80%) for model training purpose and testing data(20%) for model evaluation purpose.
 
 
-We employed the Alternating Least Squares (ALS) algorithm, a popular method for collaborative filtering, to build our recommendation model. The ALS model was trained separately for each genre to cater to specific user preferences.
+We employed the **Alternating Least Squares (ALS)** algorithm, a popular method for collaborative filtering, to build our recommendation model. The ALS model was trained separately for each genre to cater to specific user preferences.
 
 For each genre in the dataset, we filtered the data to include only movies of that genre. An ALS model(als_models) was then instantiated and trained using this filtered dataset.
 Model Evaluation
