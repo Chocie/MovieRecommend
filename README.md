@@ -1,4 +1,4 @@
-# MovieRecommend
+# Movie Recommendation System
 
 This methodology outlines the comprehensive process from data preparation to model training and evaluation, culminating in a functional recommendation system tailored to user emotions.
 To handle the large-scale data processing required for this project, we utilized PySpark. We began by importing the necessary libraries, including **PySpark** and **pandas**, and initialized a Spark session.
