@@ -2,7 +2,7 @@
 
 To handle the large-scale data processing required for this project, we utilized PySpark. We began by importing the necessary libraries, including **PySpark** and **pandas**, and initialized a Spark session.
 
-We used two primary datasets: ratings.csv and movies.csv. One containing movie ratings and another containing movie genres. These datasets were read into Spark DataFrames and then merged to associate ratings with their respective movie genres.
+We used two primary datasets: **ratings.csv** and **movies.csv**. One containing movie ratings and another containing movie genres. These datasets were read into Spark DataFrames and then merged to associate ratings with their respective movie genres.
 
 Before training the model, we applied data cleaning steps to ensure the datasets were appropriately formatted. This included dropping any rows with missing values. The data was split to training data(80%) for model training purpose and testing data(20%) for model evaluation purpose.
 
